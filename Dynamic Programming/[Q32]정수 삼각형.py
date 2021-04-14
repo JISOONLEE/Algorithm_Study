@@ -9,4 +9,5 @@ for i in range(1, n):
             graph[i][j] = graph[i][j] + graph[i-1][j-1]
         else:
             graph[i][j] = graph[i][j] + max(graph[i-1][j-1], graph[i-1][j])
-print(max(graph[n-1]))
+            
+print(max(graph[n-1])) 
