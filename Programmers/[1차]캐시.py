@@ -1,3 +1,4 @@
+# LRU 알고리즘 사용
 def solution(cacheSize, cities):
     answer = 0
     cache_list = ['']*cacheSize
