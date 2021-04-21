@@ -4,6 +4,7 @@ def seek(m, n, b_list, visited):
         for j in range(n-1):
             if b_list[i][j] != '0' and b_list[i][j] == b_list[i+1][j] == b_list[i][j+1] == b_list[i+1][j+1]:
                 visited[i][j], visited[i+1][j],visited[i][j+1], visited[i+1][j+1] = True, True, True, True
+                # b_list에 값이 같다고 표기시 붙어있는 블록 체크 불가 따라서 visited에서 표기 
     return visited
 
 # 2*2 블록 제거 후 빈공간 채우기
