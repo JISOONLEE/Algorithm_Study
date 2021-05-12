@@ -19,6 +19,7 @@ for i in range(1, len(result)):
 print(answer)
 """
 
+#그리디로 구현
 m.sort()
 
 target = 1
