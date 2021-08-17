@@ -1,3 +1,5 @@
+package baekjoon;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -36,7 +38,7 @@ public class BJ_연구소2_17141 {
 		}
 		pt = new int[M];
 		comb(0, 0);
-		
+
 		if (result == Integer.MAX_VALUE)
 			System.out.println(-1);
 		else {
@@ -64,6 +66,8 @@ public class BJ_연구소2_17141 {
 			for (int j = 0; j < N; j++) {
 				if (map[i][j] == 2) {
 					virusMap[i][j] = 0;
+				} else if (map[i][j] == 1) {
+					virusMap[i][j] = -2;
 				} else {
 					virusMap[i][j] = map[i][j];
 				}
@@ -104,9 +108,14 @@ public class BJ_연구소2_17141 {
 				max = Math.max(max, virusMap[i][j]);
 			}
 		}
-		
-		if (!check)
-			result = Math.min(max, result);
+
+		if (!check) {
+			if (max < 0)
+				result = 0;
+			else {
+				result = Math.min(max, result);
+			}
+		}
 	}
 
 	private static class Point {
