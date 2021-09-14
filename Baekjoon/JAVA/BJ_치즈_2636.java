@@ -76,6 +76,7 @@ public class BJ_치즈_2636 {
 				if(nx<0 || ny<0 || nx>=H || ny>=W) continue;
 				if(check[nx][ny]) continue;
 				if(map[nx][ny] == 1) {
+					check[nx][ny] = true;
 					cheese_edge[nx][ny] = true;
 				} else {
 					check[nx][ny] = true;
