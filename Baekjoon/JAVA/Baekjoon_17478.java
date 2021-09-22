@@ -24,7 +24,7 @@ public class Baekjoon_17478 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
-		System.out.println("어느 한 컴퓨터공학과 학생이 유명한 교수님을 찾아가 물었다.");
+		System.out.println("어 느 한 컴퓨터공학과 학생이 유명한 교수님을 찾아가 물었다.");
 		rec(0, N);
 	}
 
