@@ -4,5 +4,4 @@ def solution(arr):
 
     for i in arr[2:]:
         answer = answer*i // math.gcd(answer, i)
-
     return answer
