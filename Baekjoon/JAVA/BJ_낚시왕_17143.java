@@ -136,7 +136,7 @@ public class BJ_낚시왕_17143 {
 		for (int i = 0; i < list.size(); i++) {
 			if (list.get(i).c == loc) {
 				result += list.get(i).z;
-				list.remove(i);
+				list.remove(i); // 가장 가까운 순으로 정렬되었기에 상어 잡고 return
 				return;
 			}
 		}
