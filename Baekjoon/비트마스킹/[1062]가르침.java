@@ -18,15 +18,10 @@ public class BJ_1062_가르침 {
             System.out.println(0);
         } else {
             mask |= 1 << (int)'a'-96;
-            System.out.println(mask);
             mask |= 1 << (int)'c'-96;
-            System.out.println(mask);
             mask |= 1 << (int)'i'-96;
-            System.out.println(mask);
             mask |= 1 << (int)'n'-96;
-            System.out.println(mask);
             mask |= 1 << (int)'t'-96;
-            System.out.println(mask);
 
             for (int i=0;i<N;i++) {
                 String str = br.readLine();
